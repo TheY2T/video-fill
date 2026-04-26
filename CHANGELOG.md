@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.0] - 2026-04-27
+## [3.0.0] - 2026-04-27
 
 ### Added
 - Three fill modes: Off, Fill (`object-fit: fill`), Fullscreen (viewport-covering `position: fixed`)
