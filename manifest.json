@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Video Fill - TheY2T",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Stretch any video to fill your screen — remove letterboxing and pillarboxing on streams and video players.",
   "icons": {
     "16": "images/icon-16.png",
