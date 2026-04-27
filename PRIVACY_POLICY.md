@@ -17,11 +17,12 @@ No information about you, your browsing activity, or the pages you visit is ever
 
 The extension stores your chosen fill mode per website hostname in your browser's local storage (`chrome.storage.local`):
 
-| Value | Purpose |
-|---|---|
+| Value               | Purpose                                                                        |
+| ------------------- | ------------------------------------------------------------------------------ |
 | `[hostname]` → mode | Your selected mode (Off / Fill / Fullscreen) for each site you have configured |
 
 Example stored data:
+
 ```json
 {
   "twitch.tv": "fullscreen",
@@ -30,6 +31,7 @@ Example stored data:
 ```
 
 This data:
+
 - Never leaves your device
 - Is not tied to any account or identity
 - Only exists for sites where you have changed the default (Off) mode
@@ -37,15 +39,16 @@ This data:
 
 ## Permissions Used
 
-| Permission | Why it is needed |
-|---|---|
-| `storage` | Saves your per-site fill mode so the popup restores your preference when you revisit a site |
-| `activeTab` | Identifies the currently focused tab so the popup can read its hostname and send the fill mode command to the content script on that tab |
+| Permission                     | Why it is needed                                                                                                                                       |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `storage`                      | Saves your per-site fill mode so the popup restores your preference when you revisit a site                                                            |
+| `activeTab`                    | Identifies the currently focused tab so the popup can read its hostname and send the fill mode command to the content script on that tab               |
 | `host_permissions: <all_urls>` | Videos can be embedded on any website; the extension must be able to run on any domain to apply fill styles to `<video>` elements wherever they appear |
 
 ## Content Script Behavior
 
 A content script is injected into every webpage you visit. It:
+
 - Reads `chrome.storage.local` on page load to restore your saved mode for that site
 - Listens for mode-change commands from the extension popup
 - Injects or removes a `<style>` tag that applies CSS to `<video>` elements on the page

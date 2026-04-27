@@ -15,7 +15,7 @@ A Chrome extension that removes letterboxing and pillarboxing from any video by 
 
 ### Chrome Web Store
 
-*(Link will be added once published)*
+_(Link will be added once published)_
 
 ### Load locally (development)
 
@@ -38,11 +38,11 @@ Your choice is saved per site and restored automatically on your next visit.
 
 ## Permissions
 
-| Permission | Reason |
-|---|---|
-| `storage` | Saves your fill mode per site so preferences persist between visits |
-| `activeTab` | Reads the current tab's hostname and sends mode commands to the content script |
-| `host_permissions: <all_urls>` | Videos appear on any domain; the extension must be able to run everywhere |
+| Permission                     | Reason                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------ |
+| `storage`                      | Saves your fill mode per site so preferences persist between visits            |
+| `activeTab`                    | Reads the current tab's hostname and sends mode commands to the content script |
+| `host_permissions: <all_urls>` | Videos appear on any domain; the extension must be able to run everywhere      |
 
 No browsing history, page content, or personal data is ever read or transmitted. See [PRIVACY_POLICY.md](./PRIVACY_POLICY.md) for full details.
 
@@ -101,22 +101,22 @@ No background service worker is required.
 
 ## Tech stack
 
-| Tool | Version | Role |
-|---|---|---|
-| TypeScript | ^5.7 | Language |
-| Vite | ^6.3 | Build tool |
-| pnpm | 9.15.4 | Package manager |
-| Chrome MV3 | — | Extension platform |
+| Tool       | Version | Role               |
+| ---------- | ------- | ------------------ |
+| TypeScript | ^5.7    | Language           |
+| Vite       | ^6.3    | Build tool         |
+| pnpm       | 9.15.4  | Package manager    |
+| Chrome MV3 | —       | Extension platform |
 
 ## Icons
 
 Place your icon files in `images/` before building:
 
-| File | Size |
-|---|---|
-| `icon-16.png` | 16 × 16 px |
-| `icon-48.png` | 48 × 48 px |
-| `icon-128.png` | 128 × 128 px |
+| File            | Size                                  |
+| --------------- | ------------------------------------- |
+| `icon-16.png`   | 16 × 16 px                            |
+| `icon-48.png`   | 48 × 48 px                            |
+| `icon-128.png`  | 128 × 128 px                          |
 | `icon-2048.png` | 2048 × 2048 px (for Chrome Web Store) |
 
 ## License

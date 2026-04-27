@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.0.0] - 2026-04-27
 
 ### Added
+
 - Three fill modes: Off, Fill (`object-fit: fill`), Fullscreen (viewport-covering `position: fixed`)
 - Per-domain persistence — mode is saved per hostname and restored on revisit
 - Popup UI showing current site hostname and mode selector buttons
